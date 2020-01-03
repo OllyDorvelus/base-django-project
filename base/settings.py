@@ -127,7 +127,7 @@ class Base(Configuration):
 
 
 class Dev(Base):
-    DEBUG = False
+    DEBUG = True
 
     ALLOWED_HOSTS = [
         'localhost',
@@ -147,7 +147,7 @@ class Dev(Base):
 
 
 class Prod(Base):
-    DEBUG = True
+    DEBUG = False
 
     DATABASES = {
         # Production database settings (postgres recommended)
